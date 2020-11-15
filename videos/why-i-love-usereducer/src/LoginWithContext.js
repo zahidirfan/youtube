@@ -16,8 +16,6 @@ function loginReducer(draft, action) {
     case 'success': {
       draft.isLoggedIn = true;
       draft.isLoading = false;
-      draft.username = '';
-      draft.password = '';
       return;
     }
     case 'error': {
